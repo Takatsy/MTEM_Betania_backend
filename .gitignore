@@ -1,0 +1,81 @@
+# ============================================
+
+# .GITIGNORE POUR DEPLOIEMENT DJANGO
+
+# ============================================
+
+# --- Environnement virtuel ---
+
+venv/
+env/
+ENV/
+.venv/
+
+# --- Variables d’environnement ---
+
+.env
+*.env
+.env.*
+secrets.json
+
+# --- Python ---
+
+**pycache**/
+*.py[cod]
+*$py.class
+
+# --- Django ---
+
+*.log
+*.pot
+*.pyc
+*.pyo
+
+# Base de données locale (ne jamais deploy)
+
+db.sqlite3
+
+# Static & Media générés
+
+static/
+staticfiles/
+media/
+
+# Les fichiers générés par collectstatic
+
+assets/
+build/
+
+# Paramètres locaux
+
+local_settings.py
+settings_local.py
+
+# --- Migrations (optionnel) ---
+
+# garder migrations pour prod, mais si besoin ignorer =>
+
+# **/migrations/*
+
+# !**/migrations/**init**.py
+
+# --- IDE / OS ---
+
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# --- Distribution ---
+
+dist/
+build/
+*.egg-info/
+*.egg
+
+# --- Cache ---
+
+.cache/
+pytest_cache/
+**pypackages**/
+
